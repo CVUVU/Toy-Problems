@@ -2,11 +2,11 @@
 const calculate = () => {
   
     // Getting input from user into height variable.
-    let chemistry = document.querySelector("#chemistry").value;
-    let english = document.querySelector("#english").value;
-    let maths = document.querySelector("#maths").value;
-    let kiswahili = document.querySelector("#kiswahili").value;
-    let phy = document.querySelector("#phy").value;
+    let chemistry = Document.querySelector("#chemistry").value;
+    let english = Document.querySelector("#english").value;
+    let maths = Document.querySelector("#maths").value;
+    let kiswahili = Document.querySelector("#kiswahili").value;
+    let phy = Document.querySelector("#phy").value;
     let grades = "";
     
     // Input is string so typecasting is necessary. */
@@ -35,20 +35,20 @@ const calculate = () => {
     // show please fill them
     if (chemistry == "" || english == ""
               || maths == ""|| kiswahili =="" || phy == "") {
-      document.querySelector("#showdata").innerHTML
+      Document.querySelector("#showdata").innerHTML
            = "Please enter all the fields";
     } else {
     
       // Checking the condition for the fail and pass
       if (percentage >= 39.5) {
-        document.querySelector(
+        Document.querySelector(
           "#showdata"
         ).innerHTML = 
           ` Out of 500 your total is  ${totalgrades} 
           and percentage is ${percentage}%. <br> 
           Your grade is ${grades}. You are Pass. `;
       } else {
-        document.querySelector(
+        Document.querySelector(
           "#showdata"
         ).innerHTML = 
           ` Out of 500 your total is  ${totalgrades} 
