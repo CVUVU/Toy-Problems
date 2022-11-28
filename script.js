@@ -5,6 +5,7 @@ const calculate = () => {
     let chemistry = document.querySelector("#chemistry").value;
     let english = document.querySelector("#english").value;
     let maths = document.querySelector("#maths").value;
+    let kiswahili = document.querySelector("#kiswahili").value;
     let phy = document.querySelector("#phy").value;
     let grades = "";
     
@@ -13,11 +14,12 @@ const calculate = () => {
       parseFloat(chemistry) +
       parseFloat(english) +
       parseFloat(maths) +
+      parseFloat(kiswahili) +
       parseFloat(phy);
     
     // Checking the condition for the providing the 
     // grade to student based on percentage
-    let percentage = (totalgrades / 400) * 100;
+    let percentage = (totalgrades / 500) * 100;
     if (percentage <= 100 && percentage > 79) {
       grades = "A";
     } else if (percentage <= 79 && percentage >= 60) {
@@ -31,8 +33,8 @@ const calculate = () => {
     }
     // Checking the values are empty if empty than
     // show please fill them
-    if (chemistry == "" || english == "" 
-              || maths == "" || phy == "") {
+    if (chemistry == "" || english == ""
+              || maths == ""|| kiswahili =="" || phy == "") {
       document.querySelector("#showdata").innerHTML
            = "Please enter all the fields";
     } else {
@@ -42,14 +44,14 @@ const calculate = () => {
         document.querySelector(
           "#showdata"
         ).innerHTML = 
-          ` Out of 400 your total is  ${totalgrades} 
+          ` Out of 500 your total is  ${totalgrades} 
           and percentage is ${percentage}%. <br> 
           Your grade is ${grades}. You are Pass. `;
       } else {
         document.querySelector(
           "#showdata"
         ).innerHTML = 
-          ` Out of 400 your total is  ${totalgrades} 
+          ` Out of 500 your total is  ${totalgrades} 
           and percentage is ${percentage}%. <br> 
           Your grade is ${grades}. You are Fail. `;
       }
