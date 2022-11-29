@@ -1,5 +1,5 @@
-const Payment = 24000;
-//constant declarion and assignment
+const Payment = salary;
+//constant declaration and assignment
 
 function deductions(grossPay){
     //functions to cater for statutory deductions (PAYE, NHIF, NSSF)
@@ -16,4 +16,4 @@ function deductions(grossPay){
         result = 30%(grossPay)
     }
 }    
-console.log(120000);
+console.log(grossPay(120000));
