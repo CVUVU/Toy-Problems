@@ -16,4 +16,4 @@ function deductions(grossPay){
         result = 30%(grossPay)
     }
 }    
-console.log(grossPay(120000));
+console.log(grossPay(150000));
